@@ -1,7 +1,7 @@
 # Windows-Zmanim
 Portable Windows app for Zmanim. 
 
-Run **Zmanim.exe** on Windows 10 or 11. Close the older version first. No installer, account, or API key is needed. Uses the Windows .NET Framework 4.x runtime. Controls are in English; zman names remain in Hebrew.
+Run **Zmanim.exe** on Windows 10 or 11. No installer, account, or API key is needed. Uses the Windows .NET Framework 4.x runtime. Controls are in English; zman names are in Hebrew.
 
 - Pick your city, or type a five-digit US ZIP directly and click **Refresh** (or press Enter). Typing automatically selects US ZIP mode.
 - Check **Pin next zman** to show a small always-on-top next-zman widget. Click the widget to open the full app. The full app is never always on top.

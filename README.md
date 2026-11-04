@@ -21,3 +21,9 @@ C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe /nologo /target:winexe /
 ```
 
 When Pin next zman is selected, closing the main window hides it and keeps the popup running. Click the popup to reopen the full app. To exit, uncheck Pin next zman and close the main window.
+
+### Disclaimer
+
+This code was written by AI. Feel free to review it, add or remove features/zmanim, fix AI mistakes, or suggest better code.
+
+Feel free to open an issue for any questions, or a pull request with your edits.

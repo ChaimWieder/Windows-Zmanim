@@ -8,7 +8,7 @@ Run **Zmanim.exe** on Windows 10 or 11. No installer, account, or API key is nee
 - Click **Compact** to return to the widget. Uncheck **Pin next zman**, or close the widget, to turn off the widget and return to the full app.
 - **Today** returns to today; use the date picker for another date.
 - **24h** switches the clock format.
-- Location and preferences are saved under `%LOCALAPPDATA%\YiddishZmanim`.
+- Location and preferences are saved under `%LOCALAPPDATA%\Zmanim`.
 - Successfully retrieved days are cached. If a request fails, only cached data for the same location and date is shown, marked Offline.
 - The next-zman countdown uses the selected location's time zone. Missing solar events display a dash.
 
@@ -22,8 +22,16 @@ C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe /nologo /target:winexe /
 
 When Pin next zman is selected, closing the main window hides it and keeps the popup running. Click the popup to reopen the full app. To exit, uncheck Pin next zman and close the main window.
 
+Choose zmanim: use the Choose zmanim menu in the main window to check or uncheck individual zmanim. Your choices apply to both the daily list and next-zman widget and are saved between launches. Tzeit 8.5 degrees is off by default and can be enabled from this menu. If all are unchecked, the widget asks you to choose zmanim.
+
+The app loads the selected day and the following day together. After the final selected zman of today, the widget shows the next selected zman tomorrow with a Tomorrow label. The optional countdown crosses midnight correctly. The list continues to show the day selected in the date picker; in automatic Today mode, it advances at midnight. New two-day results need an internet connection once before they are cached.
+
+Candle lighting is taken directly from https://www.hebcal.com/home/195/jewish-calendar-rest-api using the selected location and Hebcal's local-custom defaults, with Israel holiday observance for Jerusalem/Bnei Brak and Diaspora observance elsewhere. No fixed offset is subtracted by the app: holiday times after nightfall are retained as supplied by Hebcal. New candle results need internet access; cached candle results are used on failure. A separate status message reports if candle times cannot be loaded, while ordinary zmanim remain available.
+
 ### Disclaimer
 
 This code was written by AI. Feel free to review it, add or remove features/zmanim, fix AI mistakes, or suggest better code.
 
 Feel free to open an issue for any questions, or a pull request with your edits.
+
+We did edit and fix some of it, but there is always place for improvement.
